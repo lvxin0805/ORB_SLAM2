@@ -18,6 +18,7 @@
 * along with ORB-SLAM2. If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <unistd.h>
 
 #include<iostream>
 #include<algorithm>
@@ -34,6 +35,7 @@ using namespace std;
 void LoadImages(const string &strPathLeft, const string &strPathRight, const string &strPathTimes,
                 vector<string> &vstrImageLeft, vector<string> &vstrImageRight, vector<double> &vTimeStamps);
 
+#define CV_LOAD_IMAGE_UNCHANGED -1
 int main(int argc, char **argv)
 {
     if(argc != 6)
