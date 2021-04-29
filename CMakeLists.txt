@@ -114,3 +114,15 @@ add_executable(mono_euroc
 Examples/Monocular/mono_euroc.cc)
 target_link_libraries(mono_euroc ${PROJECT_NAME})
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Myvideo)
+#StormNight add myvideo application
+add_executable(myvideo
+Examples/Myvideo/myvideo.cpp)
+target_link_libraries(myvideo ${PROJECT_NAME})
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Myslam)
+#StormNight add myslam application
+add_executable(myslam
+Examples/Myslam/myslam.cpp)
+target_link_libraries(myslam ${PROJECT_NAME})
+
